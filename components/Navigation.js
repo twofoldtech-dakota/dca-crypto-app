@@ -1,6 +1,14 @@
 import React, { useState } from "react";
 
 export default function Navigation({ code }) {
+    function toggleDarkMode() {
+        // if (html.classList.contains("dark")) {
+        //     html.classList.remove("dark");
+        // } else {
+        //     html.classList.add("dark");
+        // }
+    }
+
     return (
         <nav className="">
             <div className="mx-auto px-2 sm:px-6 lg:px-8">
@@ -81,19 +89,7 @@ export default function Navigation({ code }) {
                                     href="#"
                                     className="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700"
                                 >
-                                    Team
-                                </a>
-                                <a
-                                    href="#"
-                                    className="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700"
-                                >
-                                    Projects
-                                </a>
-                                <a
-                                    href="#"
-                                    className="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700"
-                                >
-                                    Calendar
+                                    Login
                                 </a>
                             </div>
                         </div>
@@ -146,7 +142,7 @@ export default function Navigation({ code }) {
               From: "transform opacity-100 scale-100"
               To: "transform opacity-0 scale-95"
           */}
-                            <div
+                            {/* <div
                                 className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5"
                                 role="menu"
                                 aria-orientation="vertical"
@@ -173,7 +169,7 @@ export default function Navigation({ code }) {
                                 >
                                     Sign out
                                 </a>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
