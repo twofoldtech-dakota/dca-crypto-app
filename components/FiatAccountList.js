@@ -5,7 +5,7 @@ import FiatSourceForm from "./FiatSourceForm";
 export default function FiatAccountList() {
     return (
         <div className="px-6">
-            <div className="mt-10 sm:text-center lg:text-left">
+            <div className="mt-10 text-center">
                 <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-3xl md:text-4xl">
                     <span className="block xl:inline">Current Investments</span>
                 </h2>

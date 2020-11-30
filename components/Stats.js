@@ -2,7 +2,7 @@ import React from "react";
 
 function Stats(props) {
     return (
-        <div className="p-6 sm:text-center lg:text-left">
+        <div className="p-6 text-center ">
             <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-3xl md:text-4xl">
                 <span className="block xl:inline">Account Statistics</span>
             </h2>
