@@ -133,8 +133,8 @@ function ExchangeItem(props) {
                                     stroke="currentColor"
                                 >
                                     <path
-                                        strokelinecap="round"
-                                        strokelinejoin="round"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
                                         strokewidth="{2}"
                                         d="M6 18L18 6M6 6l12 12"
                                     ></path>

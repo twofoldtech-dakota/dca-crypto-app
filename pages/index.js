@@ -6,11 +6,11 @@ import Navigation from "../components/Navigation";
 export default function Home() {
     return (
         <div>
-            <div className="relative bg-white overflow-hidden">
-                <div className="max-w-7xl mx-auto">
+            <div className="relative overflow-hidden bg-white">
+                <div className="mx-auto max-w-7xl">
                     <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
                         <svg
-                            className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
+                            className="absolute inset-y-0 right-0 hidden w-48 h-full text-white transform translate-x-1/2 lg:block"
                             fill="currentColor"
                             viewBox="0 0 100 100"
                             preserveAspectRatio="none"
@@ -18,7 +18,7 @@ export default function Home() {
                         >
                             <polygon points="50,0 100,0 50,100 0,100" />
                         </svg>
-                        <div className="relative pt-6 px-4 sm:px-6 lg:px-8">
+                        <div className="relative px-4 pt-6 sm:px-6 lg:px-8">
                             <Navigation
                                 className="relative flex items-center justify-between sm:h-10 lg:justify-start"
                                 aria-label="Global"
@@ -30,14 +30,14 @@ export default function Home() {
                                                 Workflow
                                             </span>
                                             <img
-                                                className="h-8 w-auto sm:h-10"
+                                                className="w-auto h-8 sm:h-10"
                                                 src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
                                             />
                                         </a>
-                                        <div className="-mr-2 flex items-center md:hidden">
+                                        <div className="flex items-center -mr-2 md:hidden">
                                             <button
                                                 type="button"
-                                                className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                                                className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
                                                 id="main-menu"
                                                 aria-haspopup="true"
                                             >
@@ -46,7 +46,7 @@ export default function Home() {
                                                 </span>
                                                 {/* Heroicon name: menu */}
                                                 <svg
-                                                    className="h-6 w-6"
+                                                    className="w-6 h-6"
                                                     xmlns="http://www.w3.org/2000/svg"
                                                     fill="none"
                                                     viewBox="0 0 24 24"
@@ -90,12 +90,12 @@ export default function Home() {
     From: "opacity-100 scale-100"
     To: "opacity-0 scale-95"
 */}
-                        <div className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
-                            <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
-                                <div className="px-5 pt-4 flex items-center justify-between">
+                        <div className="absolute inset-x-0 top-0 p-2 transition origin-top-right transform md:hidden">
+                            <div className="overflow-hidden bg-white rounded-lg shadow-md ring-1 ring-black ring-opacity-5">
+                                <div className="flex items-center justify-between px-5 pt-4">
                                     <div>
                                         <img
-                                            className="h-8 w-auto"
+                                            className="w-auto h-8"
                                             src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
                                             alt
                                         />
@@ -103,14 +103,14 @@ export default function Home() {
                                     <div className="-mr-2">
                                         <button
                                             type="button"
-                                            className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                                            className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
                                         >
                                             <span className="sr-only">
                                                 Close main menu
                                             </span>
                                             {/* Heroicon name: x */}
                                             <svg
-                                                className="h-6 w-6"
+                                                className="w-6 h-6"
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 fill="none"
                                                 viewBox="0 0 24 24"
@@ -138,28 +138,28 @@ export default function Home() {
                                     >
                                         <a
                                             href="#"
-                                            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                                            className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
                                             role="menuitem"
                                         >
                                             Product
                                         </a>
                                         <a
                                             href="#"
-                                            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                                            className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
                                             role="menuitem"
                                         >
                                             Features
                                         </a>
                                         <a
                                             href="#"
-                                            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                                            className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
                                             role="menuitem"
                                         >
                                             Marketplace
                                         </a>
                                         <a
                                             href="#"
-                                            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                                            className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
                                             role="menuitem"
                                         >
                                             Company
@@ -168,7 +168,7 @@ export default function Home() {
                                     <div role="none">
                                         <a
                                             href="#"
-                                            className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
+                                            className="block w-full px-5 py-3 font-medium text-center text-indigo-600 bg-gray-50 hover:bg-gray-100"
                                             role="menuitem"
                                         >
                                             Log in
@@ -177,9 +177,9 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+                        <main className="px-4 mx-auto mt-10 max-w-7xl sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
                             <div className="sm:text-center lg:text-left">
-                                <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                                <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
                                     <span className="block xl:inline">
                                         Invest spare change
                                     </span>
@@ -201,7 +201,7 @@ export default function Home() {
                                     <div className="rounded-md shadow">
                                         <a
                                             href="#"
-                                            className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
+                                            className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
                                         >
                                             Get started
                                         </a>
@@ -209,7 +209,7 @@ export default function Home() {
                                     <div className="mt-3 sm:mt-0 sm:ml-3">
                                         <a
                                             href="#"
-                                            className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
+                                            className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-indigo-700 bg-indigo-100 border border-transparent rounded-md hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
                                         >
                                             Live demo
                                         </a>
@@ -221,7 +221,7 @@ export default function Home() {
                 </div>
                 <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
                     <img
-                        className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+                        className="object-cover w-full h-56 sm:h-72 md:h-96 lg:w-full lg:h-full"
                         src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
                         alt
                     />
@@ -229,15 +229,15 @@ export default function Home() {
             </div>
 
             <div className="py-12 bg-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                     <div className="lg:text-center">
-                        <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
+                        <h2 className="text-base font-semibold tracking-wide text-indigo-600 uppercase">
                             Transactions
                         </h2>
-                        <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                        <p className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">
                             An easy way to invest
                         </p>
-                        <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                        <p className="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto">
                             Lorem ipsum dolor sit amet consect adipisicing elit.
                             Possimus magnam voluptatum cupiditate veritatis in
                             accusamus quisquam.
@@ -247,10 +247,10 @@ export default function Home() {
                         <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
                             <div className="flex">
                                 <div className="flex-shrink-0">
-                                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                    <div className="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md">
                                         {/* Heroicon name: globe-alt */}
                                         <svg
-                                            className="h-6 w-6"
+                                            className="w-6 h-6"
                                             xmlns="http://www.w3.org/2000/svg"
                                             fill="none"
                                             viewBox="0 0 24 24"
@@ -267,7 +267,7 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className="ml-4">
-                                    <dt className="text-lg leading-6 font-medium text-gray-900">
+                                    <dt className="text-lg font-medium leading-6 text-gray-900">
                                         Competitive exchange rates
                                     </dt>
                                     <dd className="mt-2 text-base text-gray-500">
@@ -280,10 +280,10 @@ export default function Home() {
                             </div>
                             <div className="flex">
                                 <div className="flex-shrink-0">
-                                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                    <div className="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md">
                                         {/* Heroicon name: scale */}
                                         <svg
-                                            className="h-6 w-6"
+                                            className="w-6 h-6"
                                             xmlns="http://www.w3.org/2000/svg"
                                             fill="none"
                                             viewBox="0 0 24 24"
@@ -300,7 +300,7 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className="ml-4">
-                                    <dt className="text-lg leading-6 font-medium text-gray-900">
+                                    <dt className="text-lg font-medium leading-6 text-gray-900">
                                         No hidden fees
                                     </dt>
                                     <dd className="mt-2 text-base text-gray-500">
@@ -313,10 +313,10 @@ export default function Home() {
                             </div>
                             <div className="flex">
                                 <div className="flex-shrink-0">
-                                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                    <div className="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md">
                                         {/* Heroicon name: lightning-bolt */}
                                         <svg
-                                            className="h-6 w-6"
+                                            className="w-6 h-6"
                                             xmlns="http://www.w3.org/2000/svg"
                                             fill="none"
                                             viewBox="0 0 24 24"
@@ -333,7 +333,7 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className="ml-4">
-                                    <dt className="text-lg leading-6 font-medium text-gray-900">
+                                    <dt className="text-lg font-medium leading-6 text-gray-900">
                                         Transfers are instant
                                     </dt>
                                     <dd className="mt-2 text-base text-gray-500">
@@ -346,10 +346,10 @@ export default function Home() {
                             </div>
                             <div className="flex">
                                 <div className="flex-shrink-0">
-                                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                    <div className="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md">
                                         {/* Heroicon name: annotation */}
                                         <svg
-                                            className="h-6 w-6"
+                                            className="w-6 h-6"
                                             xmlns="http://www.w3.org/2000/svg"
                                             fill="none"
                                             viewBox="0 0 24 24"
@@ -366,7 +366,7 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className="ml-4">
-                                    <dt className="text-lg leading-6 font-medium text-gray-900">
+                                    <dt className="text-lg font-medium leading-6 text-gray-900">
                                         Mobile notifications
                                     </dt>
                                     <dd className="mt-2 text-base text-gray-500">
@@ -383,7 +383,7 @@ export default function Home() {
             </div>
 
             <div className="bg-gray-50">
-                <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+                <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
                     <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                         <span className="block">Ready to dive in?</span>
                         <span className="block text-indigo-600">
@@ -394,15 +394,15 @@ export default function Home() {
                         <div className="inline-flex rounded-md shadow">
                             <a
                                 href="#"
-                                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
+                                className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-700"
                             >
                                 Get started
                             </a>
                         </div>
-                        <div className="ml-3 inline-flex rounded-md shadow">
+                        <div className="inline-flex ml-3 rounded-md shadow">
                             <a
                                 href="#"
-                                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50"
+                                className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-indigo-600 bg-white border border-transparent rounded-md hover:bg-indigo-50"
                             >
                                 Learn more
                             </a>
