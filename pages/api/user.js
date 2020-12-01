@@ -1,6 +1,6 @@
 import { query as q } from "faunadb";
 import { getAuthCookie } from "../../utils/auth-cookies";
-import { authClient } from "../../utils/Fauna";
+import { faunaClient } from "../../utils/fauna";
 
 export default async function user(req, res) {
     const token = getAuthCookie(req);
