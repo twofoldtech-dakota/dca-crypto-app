@@ -29,7 +29,7 @@ export default function Home() {
                                     <span className="block xl:inline">
                                         Invest spare change
                                     </span>
-                                    <span className="block text-indigo-600 xl:inline">
+                                    <span className="block text-purple-600 xl:inline">
                                         {" "}
                                         into digital assets
                                     </span>
@@ -47,7 +47,7 @@ export default function Home() {
                                     <div className="rounded-md shadow">
                                         <a
                                             href="#"
-                                            className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
+                                            className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white bg-purple-600 border border-transparent rounded-md hover:bg-blue-default hover:text-black hover:border-2 hover:border-black md:py-4 md:text-lg md:px-10"
                                         >
                                             Get started
                                         </a>
@@ -77,7 +77,7 @@ export default function Home() {
             <div className="py-12 bg-gray-100">
                 <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                     <div className="lg:text-center">
-                        <h2 className="text-base font-semibold tracking-wide text-indigo-600 uppercase">
+                        <h2 className="text-base font-semibold tracking-wide text-purple-600 uppercase">
                             Transactions
                         </h2>
                         <p className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">
@@ -93,7 +93,7 @@ export default function Home() {
                         <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
                             <div className="flex">
                                 <div className="flex-shrink-0">
-                                    <div className="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md">
+                                    <div className="flex items-center justify-center w-12 h-12 text-white bg-purple-600 rounded-md">
                                         {/* Heroicon name: globe-alt */}
                                         <svg
                                             className="w-6 h-6"
@@ -126,7 +126,7 @@ export default function Home() {
                             </div>
                             <div className="flex">
                                 <div className="flex-shrink-0">
-                                    <div className="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md">
+                                    <div className="flex items-center justify-center w-12 h-12 text-white bg-purple-600 rounded-md">
                                         {/* Heroicon name: scale */}
                                         <svg
                                             className="w-6 h-6"
@@ -159,7 +159,7 @@ export default function Home() {
                             </div>
                             <div className="flex">
                                 <div className="flex-shrink-0">
-                                    <div className="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md">
+                                    <div className="flex items-center justify-center w-12 h-12 text-white bg-purple-600 rounded-md">
                                         {/* Heroicon name: lightning-bolt */}
                                         <svg
                                             className="w-6 h-6"
@@ -192,7 +192,7 @@ export default function Home() {
                             </div>
                             <div className="flex">
                                 <div className="flex-shrink-0">
-                                    <div className="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md">
+                                    <div className="flex items-center justify-center w-12 h-12 text-white bg-purple-600 rounded-md">
                                         {/* Heroicon name: annotation */}
                                         <svg
                                             className="w-6 h-6"
@@ -232,7 +232,7 @@ export default function Home() {
                 <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
                     <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                         <span className="block">Ready to dive in?</span>
-                        <span className="block text-indigo-600">
+                        <span className="block text-purple-600">
                             Start your free trial today.
                         </span>
                     </h2>
@@ -240,7 +240,7 @@ export default function Home() {
                         <div className="inline-flex rounded-md shadow">
                             <a
                                 href="#"
-                                className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-700"
+                                className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white bg-purple-600 border border-transparent rounded-md hover:bg-blue-default hover:text-black hover:border-2 hover:border-black"
                             >
                                 Get started
                             </a>
@@ -248,7 +248,7 @@ export default function Home() {
                         <div className="inline-flex ml-3 rounded-md shadow">
                             <a
                                 href="#"
-                                className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-indigo-600 bg-white border border-transparent rounded-md hover:bg-indigo-50"
+                                className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-purple-600 bg-white border border-transparent rounded-md hover:bg-indigo-50"
                             >
                                 Learn more
                             </a>

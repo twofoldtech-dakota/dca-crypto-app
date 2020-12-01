@@ -1,10 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, Component } from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import useSWR from "swr";
 
 export default function Navigation({ siteTitle }) {
+    const router = useRouter();
+
+    const fetcher = (url) => fetch(url).then((r) => r.json());
+
+    const { data: user, mutate: mutateUser } = useSWR("/api/user", fetcher);
+
+    const logout = async () => {
+        const res = await fetch("/api/logout");
+        if (res.ok) {
+            mutateUser(null);
+            router.push("/login");
+        }
+    };
+
     const [isExpanded, toggleExpansion] = useState(false);
 
     return (
-        <nav className="flex flex-wrap items-center justify-between px-10 py-6 bg-indigo-200">
+        <nav className="flex flex-wrap items-center justify-between px-10 py-6 bg-purple-600">
             <div className="flex items-center flex-shrink-0 mr-6 text-white ">
                 <a href="/">
                     <svg
@@ -24,7 +41,7 @@ export default function Navigation({ siteTitle }) {
             <div className="block lg:hidden">
                 <button
                     onClick={() => toggleExpansion(!isExpanded)}
-                    className="flex items-center px-3 py-2 text-indigo-600 border border-indigo-600 rounded hover:border-transparent hover:text-white hover:bg-gray-900"
+                    className="flex items-center px-3 py-2 text-white border rounded border-blue-default hover:border-transparent hover:text-black hover:bg-blue-default"
                 >
                     <svg
                         className="w-3 h-3 fill-current"
@@ -44,23 +61,32 @@ export default function Navigation({ siteTitle }) {
                 <div className="text-xl lg:flex-grow">
                     <a
                         href="/dashboard"
-                        className="block px-4 py-2 mt-4 mr-5 leading-none text-indigo-600 rounded hover:border-transparent hover:text-white hover:bg-gray-900 lg:mt-0 lg:inline-block"
+                        className="block px-4 py-2 mt-4 mr-5 leading-none text-white rounded hover:border-transparent hover:text-black hover:bg-blue-default lg:mt-0 lg:inline-block"
                     >
                         Dashboard
                     </a>
                     <a
                         href="/faq"
-                        className="block px-4 py-2 mt-4 leading-none text-indigo-600 rounded hover:border-transparent hover:text-white hover:bg-gray-900 lg:mt-0 lg:inline-block"
+                        className="block px-4 py-2 mt-4 mr-5 leading-none text-white rounded hover:border-transparent hover:text-black hover:bg-blue-default lg:mt-0 lg:inline-block"
                     >
                         FAQ
                     </a>
                 </div>
-                <div>
+                <div className={`${user ? ` hidden` : ``} "text-xl`}>
                     <a
                         href="/login"
-                        className="inline-block px-4 py-2 mt-4 leading-none text-indigo-600 border border-indigo-600 rounded hover:border-transparent hover:text-white hover:bg-gray-900 lg:mt-0"
+                        className="block px-4 py-2 mt-4 mr-5 leading-none text-white border-2 rounded border-blue-default hover:text-black hover:bg-blue-default lg:mt-0 lg:inline-block"
                     >
                         Login
+                    </a>
+                </div>
+                <div className={`${user ? `` : ` hidden`} "text-xl`}>
+                    <a
+                        onClick={logout}
+                        href="#"
+                        className="block px-4 py-2 mt-4 mr-5 leading-none text-white border-2 rounded border-blue-default hover:text-black hover:bg-blue-default lg:mt-0 lg:inline-block"
+                    >
+                        Logout
                     </a>
                 </div>
             </div>

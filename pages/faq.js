@@ -12,7 +12,7 @@ export default function faq() {
 
             <main className="px-2 mx-auto sm:px-6 mt-7 lg:px-8">
                 <div className="mb-10 text-center">
-                    <h1 className="text-6xl font-extrabold tracking-tight text-indigo-600">
+                    <h1 className="text-6xl font-extrabold tracking-tight text-purple-600">
                         <span className="block xl:inline">
                             Frequently Asked Questions
                         </span>

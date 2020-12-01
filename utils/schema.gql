@@ -1,0 +1,23 @@
+type User {
+    email: String! @unique
+    investments: [Investment!] @relation
+    totalInvested: Int
+    totalPnL: Int
+}
+
+type Investment {
+    fiatAccountName: String!
+    exchangeName: String!
+    date: String!
+    investedAmount: Int
+    unrealizedPnL: String!
+    multiplier: Int
+    owner: String!
+    user: User!
+    exchangeApiKey: String!
+    exchangeApiSecret: String!
+}
+
+type Query {
+    allInvestments: [Investment!]
+}

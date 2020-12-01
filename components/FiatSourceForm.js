@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 export default function FiatSourceForm() {
-    const defaultClassName = "fixed inset-0 z-10 overflow-y-auto";
+    const defaultClassName = "fixed inset-0 z-10 overflow-y-auto hidden";
     const [showAddFiatSourceModal, setAddFiatSourceModal] = useState(false);
     const [className, setClassName] = useState(defaultClassName);
 
@@ -9,16 +9,16 @@ export default function FiatSourceForm() {
         setAddFiatSourceModal(!showAddFiatSourceModal);
 
         if (showAddFiatSourceModal) {
-            setClassName(defaultClassName);
+            setClassName(defaultClassName.replace(" hidden", ""));
         } else {
-            setClassName(defaultClassName + " hidden");
+            setClassName(defaultClassName);
         }
     };
     useEffect(() => {
         if (showAddFiatSourceModal) {
-            setClassName(defaultClassName);
+            setClassName(defaultClassName.replace(" hidden", ""));
         } else {
-            setClassName(defaultClassName + " hidden");
+            setClassName(defaultClassName);
         }
     });
 
