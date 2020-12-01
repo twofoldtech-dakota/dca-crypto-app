@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
     return (
         <div className="flex flex-row text-gray-900 bg-indigo-200 rounded">
-            <div className="relative overflow-hidden rounded shadow-lg z-2">
+            <div className="flex-grow">
                 <div className="px-6 py-4">
                     <div className="relative mb-2 text-xl font-bold">
                         About Us
