@@ -7,7 +7,8 @@ function Stats(props) {
                 <span className="block xl:inline">Account Statistics</span>
             </h2>
             <div id="wrapper" className="mx-auto mt-5">
-                <div className="sm:grid sm:h-32 sm:grid-flow-row sm:gap-4 sm:grid-cols-3">
+                Comming soon...
+                {/* <div className="sm:grid sm:h-32 sm:grid-flow-row sm:gap-4 sm:grid-cols-3">
                     <div
                         id="jh-stats-positive"
                         className="flex flex-col justify-center px-4 py-4 bg-white border border-gray-300 rounded"
@@ -92,7 +93,7 @@ function Stats(props) {
                             </p>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     );

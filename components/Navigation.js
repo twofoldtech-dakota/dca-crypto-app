@@ -4,8 +4,8 @@ export default function Navigation({ siteTitle }) {
     const [isExpanded, toggleExpansion] = useState(false);
 
     return (
-        <nav className="flex flex-wrap items-center justify-between p-6 bg-indigo-200">
-            <div className="flex items-center flex-shrink-0 mr-6 text-white">
+        <nav className="flex flex-wrap items-center justify-between px-10 py-6 bg-indigo-200">
+            <div className="flex items-center flex-shrink-0 mr-6 text-white ">
                 <a href="/">
                     <svg
                         className="w-8 h-8 mr-2 fill-current"

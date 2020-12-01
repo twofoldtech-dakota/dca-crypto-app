@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Footer() {
     return (
-        <div className="flex flex-row text-gray-900 bg-indigo-200 rounded">
+        <div className="flex flex-wrap items-center justify-between p-6 bg-indigo-200">
             <div className="flex-grow">
-                <div className="px-6 py-4">
+                <div className="">
                     <div className="relative mb-2 text-xl font-bold">
                         About Us
                     </div>
