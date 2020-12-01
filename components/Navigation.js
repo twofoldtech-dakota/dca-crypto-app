@@ -6,15 +6,17 @@ export default function Navigation({ siteTitle }) {
     return (
         <nav className="flex flex-wrap items-center justify-between p-6 bg-indigo-200">
             <div className="flex items-center flex-shrink-0 mr-6 text-white">
-                <svg
-                    className="w-8 h-8 mr-2 fill-current"
-                    width="54"
-                    height="54"
-                    viewBox="0 0 54 54"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
-                </svg>
+                <a href="/">
+                    <svg
+                        className="w-8 h-8 mr-2 fill-current"
+                        width="54"
+                        height="54"
+                        viewBox="0 0 54 54"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
+                    </svg>
+                </a>
                 <span className="text-xl font-semibold tracking-tight">
                     {siteTitle}
                 </span>
@@ -41,13 +43,13 @@ export default function Navigation({ siteTitle }) {
             >
                 <div className="text-xl lg:flex-grow">
                     <a
-                        href="#responsive-header"
+                        href="/dashboard"
                         className="block px-4 py-2 mt-4 mr-5 leading-none text-indigo-600 rounded hover:border-transparent hover:text-white hover:bg-gray-900 lg:mt-0 lg:inline-block"
                     >
                         Dashboard
                     </a>
                     <a
-                        href="#responsive-header"
+                        href="/faq"
                         className="block px-4 py-2 mt-4 leading-none text-indigo-600 rounded hover:border-transparent hover:text-white hover:bg-gray-900 lg:mt-0 lg:inline-block"
                     >
                         FAQ
@@ -55,7 +57,7 @@ export default function Navigation({ siteTitle }) {
                 </div>
                 <div>
                     <a
-                        href="#download"
+                        href="/login"
                         className="inline-block px-4 py-2 mt-4 leading-none text-indigo-600 border border-indigo-600 rounded hover:border-transparent hover:text-white hover:bg-gray-900 lg:mt-0"
                     >
                         Login

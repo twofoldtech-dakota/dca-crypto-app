@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import FiatAccountList from "../components/FiatAccountList";
 import Exchanges from "../components/Exchanges";
 import Stats from "../components/Stats";
+import Footer from "@components/Footer";
 
 export default function Dashboard() {
     return (
@@ -27,6 +28,7 @@ export default function Dashboard() {
                 <FiatAccountList />
                 <Exchanges />
             </main>
+            <Footer />
         </div>
     );
 }

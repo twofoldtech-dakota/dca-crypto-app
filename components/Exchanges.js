@@ -10,6 +10,9 @@ function Exhanges(props) {
                 </h2>
             </div>
             <ExchangeItem />
+            <button className="w-full p-4 mt-5 text-xl font-medium text-white uppercase bg-green-400 rounded-lg shadow hover:bg-green-500">
+                Connect Exchange
+            </button>
         </div>
     );
 }

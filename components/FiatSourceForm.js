@@ -28,7 +28,7 @@ export default function FiatSourceForm() {
                 onClick={toggleModal}
                 className="w-full p-4 mt-5 text-xl font-medium text-white uppercase bg-green-400 rounded-lg shadow hover:bg-green-500"
             >
-                Add another investing source
+                Add investing source
             </button>
 
             <div className={className}>
@@ -96,7 +96,6 @@ export default function FiatSourceForm() {
                                     </label>
                                     <input
                                         className="block w-full px-4 py-3 mb-3 border rounded appearance-none bg-grey-lighter text-grey-darker border-grey-lighter"
-                                        id="grid-password"
                                         type="password"
                                         placeholder="******************"
                                     />
