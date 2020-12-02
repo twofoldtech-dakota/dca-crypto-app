@@ -19,3 +19,9 @@ export default class Layout extends React.Component {
         );
     }
 }
+
+export async function getServerSideProps(ctx) {
+    const token = getAuthCookie(ctx.req);
+
+    return { props: { token: token || null } };
+}

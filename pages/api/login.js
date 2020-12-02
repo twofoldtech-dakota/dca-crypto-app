@@ -28,3 +28,9 @@ export default async function login(req, res) {
         res.status(error.requestResult.statusCode).send(error.message);
     }
 }
+
+export async function getServerSideProps(ctx) {
+    const token = getAuthCookie(ctx.req);
+
+    return { props: { token: token || null } };
+}
