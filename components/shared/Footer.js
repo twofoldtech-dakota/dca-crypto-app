@@ -34,7 +34,13 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className="mt-5 text-xs text-center ">
-                        © 2020 nofomo.io
+                        ©2020 NOFOMO.IO, LLC. ALL RIGHTS RESERVED.{" "}
+                        <a
+                            className="border-b-2 border-blue-default"
+                            href="/disclaimer"
+                        >
+                            DISCLAIMER
+                        </a>
                     </div>
                 </div>
             </div>

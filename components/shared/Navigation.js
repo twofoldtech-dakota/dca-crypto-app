@@ -20,7 +20,7 @@ export default function Navigation({ siteTitle }) {
     const [isExpanded, toggleExpansion] = useState(false);
 
     return (
-        <nav className="flex flex-wrap items-center justify-between px-10 py-6 bg-purple-600">
+        <nav className="flex flex-wrap items-center justify-between px-10 py-6 bg-blue-default">
             {/* {(() => {
                 if (user === undefined) {
                     alert("user is undefined");
@@ -68,30 +68,30 @@ export default function Navigation({ siteTitle }) {
                 <div className="text-xl lg:flex-grow">
                     <a
                         href="/dashboard"
-                        className="block px-4 py-2 mt-4 mr-5 leading-none text-white rounded hover:border-transparent hover:text-black hover:bg-blue-default lg:mt-0 lg:inline-block"
+                        className="block px-4 py-2 mt-4 mr-5 leading-none rounded text-green-default hover:border-transparent hover:text-blue-default hover:bg-green-default lg:mt-0 lg:inline-block"
                     >
                         Dashboard
                     </a>
                     <a
                         href="/faq"
-                        className="block px-4 py-2 mt-4 mr-5 leading-none text-white rounded hover:border-transparent hover:text-black hover:bg-blue-default lg:mt-0 lg:inline-block"
+                        className="block px-4 py-2 mt-4 mr-5 leading-none rounded text-green-default hover:border-transparent hover:text-blue-default hover:bg-green-default lg:mt-0 lg:inline-block"
                     >
                         FAQ
                     </a>
                 </div>
-                <div className={`${user ? ` hidden` : ``} "text-xl`}>
+                <div className={`${user ? ` hidden` : ``} text-xl`}>
                     <a
                         href="/login"
-                        className="block px-4 py-2 mt-4 mr-5 leading-none text-white border-2 rounded border-blue-default hover:text-black hover:bg-blue-default lg:mt-0 lg:inline-block"
+                        className="block px-4 py-2 mt-4 mr-5 leading-none border-2 rounded text-yellow-default border-yellow-default hover:text-blue-default hover:bg-yellow-default lg:mt-0 lg:inline-block"
                     >
                         Login
                     </a>
                 </div>
-                <div className={`${user ? `` : ` hidden`} "text-xl`}>
+                <div className={`${user ? `` : ` hidden`} text-xl`}>
                     <a
                         onClick={logout}
                         href="#"
-                        className="block px-4 py-2 mt-4 mr-5 leading-none text-white border-2 rounded border-blue-default hover:text-black hover:bg-blue-default lg:mt-0 lg:inline-block"
+                        className="block px-4 py-2 mt-4 mr-5 leading-none border-2 rounded text-yellow-default border-yellow-default hover:text-blue-default hover:bg-yellow-default lg:mt-0 lg:inline-block"
                     >
                         Logout
                     </a>

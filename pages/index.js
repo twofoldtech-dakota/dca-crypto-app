@@ -22,7 +22,7 @@ export default function Home() {
                                     <span className="block xl:inline">
                                         Invest spare change
                                     </span>
-                                    <span className="block text-purple-600 xl:inline">
+                                    <span className="block text-blue-default xl:inline">
                                         {" "}
                                         into digital assets
                                     </span>
@@ -40,7 +40,7 @@ export default function Home() {
                                     <div className="rounded-md shadow">
                                         <a
                                             href="#"
-                                            className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white bg-purple-600 border border-transparent rounded-md hover:bg-blue-default hover:text-black hover:border-2 hover:border-black md:py-4 md:text-lg md:px-10"
+                                            className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-black border border-transparent rounded-md bg-yellow-default hover:bg-blue-default hover:text-yellow-default hover:border-2 hover:border-black md:py-4 md:text-lg md:px-10"
                                         >
                                             Get started
                                         </a>
@@ -48,7 +48,7 @@ export default function Home() {
                                     <div className="mt-3 sm:mt-0 sm:ml-3">
                                         <a
                                             href="#"
-                                            className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-indigo-700 bg-indigo-100 border border-transparent rounded-md hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
+                                            className="flex items-center justify-center w-full px-8 py-3 text-base font-medium border border-transparent rounded-md text-yellow-default bg-blue-default hover:bg-yellow-default hover:text-blue-default md:py-4 md:text-lg md:px-10"
                                         >
                                             Live demo
                                         </a>
@@ -71,15 +71,14 @@ export default function Home() {
                 <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                     <div className="lg:text-center">
                         <h2 className="text-base font-semibold tracking-wide text-purple-600 uppercase">
-                            Transactions
+                            Security
                         </h2>
                         <p className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">
-                            An easy way to invest
+                            A secure way to invest
                         </p>
                         <p className="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto">
-                            Lorem ipsum dolor sit amet consect adipisicing elit.
-                            Possimus magnam voluptatum cupiditate veritatis in
-                            accusamus quisquam.
+                            Nofomo will never sell any of your assets. We only
+                            make purchases on your selected exchanges.
                         </p>
                     </div>
                     <div className="mt-10">
@@ -107,13 +106,12 @@ export default function Home() {
                                 </div>
                                 <div className="ml-4">
                                     <dt className="text-lg font-medium leading-6 text-gray-900">
-                                        Competitive exchange rates
+                                        The best exchanges
                                     </dt>
                                     <dd className="mt-2 text-base text-gray-500">
-                                        Lorem ipsum, dolor sit amet consectetur
-                                        adipisicing elit. Maiores impedit
-                                        perferendis suscipit eaque, iste dolor
-                                        cupiditate blanditiis ratione.
+                                        We allow you to choose between the most
+                                        popular exchanges. Add more here talking
+                                        about how good the exchanges are
                                     </dd>
                                 </div>
                             </div>
@@ -143,10 +141,8 @@ export default function Home() {
                                         No hidden fees
                                     </dt>
                                     <dd className="mt-2 text-base text-gray-500">
-                                        Lorem ipsum, dolor sit amet consectetur
-                                        adipisicing elit. Maiores impedit
-                                        perferendis suscipit eaque, iste dolor
-                                        cupiditate blanditiis ratione.
+                                        We will never charge you for any
+                                        purchase you make.
                                     </dd>
                                 </div>
                             </div>
@@ -173,13 +169,14 @@ export default function Home() {
                                 </div>
                                 <div className="ml-4">
                                     <dt className="text-lg font-medium leading-6 text-gray-900">
-                                        Transfers are instant
+                                        Easy management
                                     </dt>
                                     <dd className="mt-2 text-base text-gray-500">
-                                        Lorem ipsum, dolor sit amet consectetur
-                                        adipisicing elit. Maiores impedit
-                                        perferendis suscipit eaque, iste dolor
-                                        cupiditate blanditiis ratione.
+                                        Easily manage all your investments in
+                                        your dashboard. You can control which of
+                                        your accounts you want to start saving
+                                        with and you can choose your preferred
+                                        exchange(s).
                                     </dd>
                                 </div>
                             </div>
@@ -206,7 +203,7 @@ export default function Home() {
                                 </div>
                                 <div className="ml-4">
                                     <dt className="text-lg font-medium leading-6 text-gray-900">
-                                        Mobile notifications
+                                        Another topic
                                     </dt>
                                     <dd className="mt-2 text-base text-gray-500">
                                         Lorem ipsum, dolor sit amet consectetur
@@ -226,13 +223,13 @@ export default function Home() {
                     <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                         <span className="block">Ready to dive in?</span>
                         <span className="block text-purple-600">
-                            Start your free trial today.
+                            Start today.
                         </span>
                     </h2>
                     <div className="mt-8 lex lg:mt-0 lg:flex-shrink-0">
                         <div className="inline-flex rounded-md shadow">
                             <a
-                                href="#"
+                                href="/register"
                                 className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white bg-purple-600 border border-transparent rounded-md hover:bg-blue-default hover:text-black hover:border-2 hover:border-black"
                             >
                                 Get started
@@ -240,7 +237,7 @@ export default function Home() {
                         </div>
                         <div className="inline-flex ml-3 rounded-md shadow">
                             <a
-                                href="#"
+                                href="/faq"
                                 className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-purple-600 bg-white border border-transparent rounded-md hover:bg-indigo-50"
                             >
                                 Learn more
