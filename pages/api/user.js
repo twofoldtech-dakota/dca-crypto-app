@@ -1,6 +1,6 @@
 import { query as q } from "faunadb";
 import { getAuthCookie } from "../../utils/auth-cookies";
-import { faunaClient } from "../../utils/fauna";
+import { authClient } from "../../utils/fauna";
 
 export default async function user(req, res) {
     const token = getAuthCookie(req);
@@ -12,7 +12,7 @@ export default async function user(req, res) {
 
     try {
         const { ref, data } = await authClient(token).query(
-            q.Get(q.Identity())
+            q.Get(q.CurrentIdentity())
         );
         console.log("auth token found: " + ref.id);
         res.status(200).json({ ...data, id: ref.id });

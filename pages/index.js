@@ -1,16 +1,9 @@
-import Head from "next/head";
-import Header from "@components/Header";
-import Footer from "@components/Footer";
-import Navigation from "../components/Navigation";
+import Layout from "../components/shared/Layout";
+import { getAuthCookie } from "../utils/auth-cookies";
 
 export default function Home() {
     return (
-        <div>
-            <Navigation
-                className="relative flex items-center justify-between sm:h-10 lg:justify-start"
-                aria-label="Global"
-            />
-
+        <Layout title="Nofomo - Home">
             <div className="relative overflow-hidden bg-white">
                 <div className="mx-auto max-w-7xl">
                     <div className="relative z-10 pb-10 bg-white lg:max-w-2xl lg:w-full">
@@ -256,7 +249,6 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <Footer />
-        </div>
+        </Layout>
     );
 }

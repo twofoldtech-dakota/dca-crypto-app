@@ -1,8 +1,8 @@
 import { query as q } from "faunadb";
-import { faunaClient } from "../../utils/fauna";
+import { faunaClient } from "../../utils/Fauna";
 import { setAuthCookie } from "../../utils/auth-cookies";
 
-export default async function signup(req, res) {
+export default async function register(req, res) {
     const { email, password, governingAgency } = req.body;
 
     if (!email || !password) {

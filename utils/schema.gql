@@ -12,7 +12,6 @@ type Investment {
     investedAmount: Int
     unrealizedPnL: String!
     multiplier: Int
-    owner: String!
     user: User!
     exchangeApiKey: String!
     exchangeApiSecret: String!

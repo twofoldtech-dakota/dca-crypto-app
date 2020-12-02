@@ -39,7 +39,6 @@ export default function Login({ code }) {
                     <img
                         className="w-auto h-12 mx-auto"
                         src="https://tailwindui.com/img/logos/workflow-mark-purple-600.svg"
-                        alt="Workflow"
                     />
                     <h2 className="mt-6 text-3xl font-extrabold text-center text-gray-900">
                         Sign in to your account

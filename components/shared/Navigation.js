@@ -1,5 +1,4 @@
-import React, { useState, Component } from "react";
-import Link from "next/link";
+import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import useSWR from "swr";
 
@@ -22,6 +21,14 @@ export default function Navigation({ siteTitle }) {
 
     return (
         <nav className="flex flex-wrap items-center justify-between px-10 py-6 bg-purple-600">
+            {/* {(() => {
+                if (user === undefined) {
+                    alert("user is undefined");
+                    router.push("/login");
+                } else {
+                    alert("user is here");
+                }
+            })()} */}
             <div className="flex items-center flex-shrink-0 mr-6 text-white ">
                 <a href="/">
                     <svg
