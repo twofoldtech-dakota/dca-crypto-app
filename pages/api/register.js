@@ -1,5 +1,5 @@
 import { query as q } from "faunadb";
-import { faunaClient } from "../../utils/Fauna";
+import { faunaClient } from "../../utils/fauna";
 import { setAuthCookie } from "../../utils/auth-cookies";
 
 export default async function register(req, res) {
