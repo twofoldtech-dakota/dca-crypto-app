@@ -3,7 +3,7 @@ import React from "react";
 function ExchangeItem(props) {
     return (
         <div>
-            <div className="flex flex-col pt-6 my-2 mt-5 bg-gray-100 rounded-md shadow-lg lg:flex lg:items-center lg:justify-between">
+            <div className="flex flex-col pt-6 my-2 mt-5 rounded-md shadow-lg bg-blue-default lg:flex lg:items-center lg:justify-between">
                 <div className="flex flex-row w-full px-6 sm:grid-cols-1">
                     <h2 className="text-2xl font-bold leading-7 text-indigo-600 sm:text-3xl">
                         Interest Checking - 7053

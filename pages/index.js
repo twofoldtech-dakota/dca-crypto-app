@@ -18,12 +18,12 @@ export default function Home() {
                             <polygon points="50,0 100,0 50,100 0,100" />
                         </svg>
                         <main className="px-4 pt-10 mx-auto max-w-7xl sm:px-6 lg:px-8">
-                            <div className="sm:text-center lg:text-left">
+                            <div className="text-center lg:text-left">
                                 <h1 className="text-4xl font-extrabold tracking-tight text-blue-default sm:text-5xl md:text-6xl">
-                                    <span className="block xl:inline">
+                                    <span className="block pb-2">
                                         Invest spare change
                                     </span>
-                                    <span className="block text-yellow-default xl:inline">
+                                    <span className="block text-yellow-default">
                                         {" "}
                                         into digital assets
                                     </span>
@@ -40,7 +40,7 @@ export default function Home() {
                                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                                     <div className="rounded-md shadow">
                                         <Link href="register">
-                                            <a className="flex items-center justify-center w-full px-8 py-3 text-base font-medium border border-transparent rounded-md text-yellow-default bg-blue-default hover:bg-green-default hover:text-blue-default md:py-4 md:text-lg md:px-10 hover:border-blue-default">
+                                            <a className="flex items-center justify-center w-full px-8 py-3 text-base font-medium border border-transparent rounded-md text-green-default bg-blue-default hover:bg-green-default hover:text-blue-default md:py-4 md:text-lg md:px-10 hover:border-blue-default">
                                                 Get started
                                             </a>
                                         </Link>
@@ -57,7 +57,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="px-10 pt-10">
+            <div className="px-6 pt-10">
                 <div className="px-4 pt-4 pb-8 mx-auto max-w-7xl sm:px-6 lg:px-8 bg-blue-default">
                     <div className="lg:text-center">
                         <p className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-green-default sm:text-4xl">

@@ -33,14 +33,14 @@ export default function Register() {
     });
 
     return (
-        <div className="flex items-center justify-center min-h-screen px-4 py-12 bg-gray-50 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-center min-h-screen px-4 py-12 bg-blue-default sm:px-6 lg:px-8">
             <div className="w-full max-w-md space-y-8">
                 <div>
                     <img
                         className="w-auto h-12 mx-auto"
                         src="https://tailwindui.com/img/logos/workflow-mark-purple-600.svg"
                     />
-                    <h2 className="mt-6 text-3xl font-extrabold text-center text-gray-900">
+                    <h2 className="mt-6 text-3xl font-extrabold text-center text-green-default">
                         Create a new account
                     </h2>
                 </div>
@@ -93,11 +93,11 @@ export default function Register() {
                             <input
                                 id="remember_me"
                                 type="checkbox"
-                                className="w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-500"
+                                className="w-4 h-4 border-gray-300 rounded text-green-default focus:ring-green-default"
                             />
                             <label
                                 htmlFor="remember_me"
-                                className="block ml-2 text-sm text-gray-900"
+                                className="block ml-2 text-sm text-yellow-default"
                             >
                                 Remember me
                             </label>
@@ -106,12 +106,12 @@ export default function Register() {
                     <div>
                         <button
                             type="submit"
-                            className="relative flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-purple-600 border border-transparent rounded-md group hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+                            className="relative flex justify-center w-full px-4 py-2 text-sm font-medium rounded-md bg-green-default text-blue-default group hover:bg-green-dark"
                         >
                             <span className="absolute inset-y-0 left-0 flex items-center pl-3">
                                 {/* Heroicon name: lock-closed */}
                                 <svg
-                                    className="w-5 h-5 text-purple-500 group-hover:text-purple-400"
+                                    className="w-5 h-5 text-blue-default group-hover:text-green-light"
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20"
                                     fill="currentColor"

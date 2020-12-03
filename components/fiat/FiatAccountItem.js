@@ -17,12 +17,12 @@ export default function FiatAccountItem() {
 
     return (
         <div>
-            <div className="flex flex-col pt-6 my-2 mt-5 rounded-md shadow-lg bg-yellow-default lg:flex lg:items-center lg:justify-between">
-                <div className="flex flex-row w-full px-6 sm:grid-cols-1">
+            <div className="flex flex-col pt-6 my-2 mt-5 rounded-md shadow-lg bg-green-default lg:flex lg:items-center lg:justify-between">
+                <div className="w-full grid-rows-3 px-6">
                     <h2 className="text-2xl font-bold leading-7 text-blue-default sm:text-3xl">
                         Interest Checking - 7053
                     </h2>
-                    <div className="flex flex-col mt-2 mb-8 sm:flex-row sm:flex-wrap sm:space-x-6">
+                    <div className="flex flex-col mt-2 mb-8 sm:flex-row sm:flex-wrap sm:space-x-6 text-yellow-default">
                         <div className="flex items-center mt-2 text-sm">
                             {/* Heroicon name: briefcase */}
                             <svg
@@ -100,7 +100,7 @@ export default function FiatAccountItem() {
                             <button
                                 onClick={showForm}
                                 type="button"
-                                className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                className="inline-flex items-center px-4 py-2 text-sm font-medium border border-gray-300 rounded-md shadow-sm bg-yellow-default hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                             >
                                 {/* Heroicon name: pencil */}
                                 <svg

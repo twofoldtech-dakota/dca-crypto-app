@@ -33,14 +33,14 @@ export default function Login({ code }) {
     });
 
     return (
-        <div className="flex items-center justify-center min-h-screen px-4 py-12 bg-gray-50 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-center min-h-screen px-4 py-12 bg-blue-default sm:px-6 lg:px-8">
             <div className="w-full max-w-md space-y-8">
                 <div>
                     <img
                         className="w-auto h-12 mx-auto"
                         src="https://tailwindui.com/img/logos/workflow-mark-purple-600.svg"
                     />
-                    <h2 className="mt-6 text-3xl font-extrabold text-center text-gray-900">
+                    <h2 className="mt-6 text-3xl font-extrabold text-center text-green-default">
                         Sign in to your account
                     </h2>
                 </div>
@@ -56,7 +56,7 @@ export default function Login({ code }) {
                                 name="email"
                                 type="email"
                                 required
-                                className="relative block w-full px-3 py-2 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-none appearance-none rounded-t-md focus:outline-none focus:ring-purple-500 focus:border-purple-500 focus:z-10 sm:text-sm"
+                                className="relative block w-full px-3 py-2 border rounded-none appearance-none text-blue-default placeholder-blue-default bg-yellow-default rounded-t-md focus:outline-none focus:z-10 sm:text-sm"
                                 placeholder="Email address"
                                 ref={register({
                                     required: "Email is required",
@@ -75,7 +75,7 @@ export default function Login({ code }) {
                                 name="password"
                                 type="password"
                                 required
-                                className="relative block w-full px-3 py-2 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-none appearance-none rounded-b-md focus:outline-none focus:ring-purple-500 focus:border-purple-500 focus:z-10 sm:text-sm"
+                                className="relative block w-full px-3 py-2 border rounded-none appearance-none text-blue-default placeholder-blue-default rounded-b-md focus:outline-none bg-yellow-default focus:z-10 sm:text-sm"
                                 placeholder="Password"
                                 ref={register({
                                     required: "Password is required",
@@ -93,11 +93,11 @@ export default function Login({ code }) {
                             <input
                                 id="remember_me"
                                 type="checkbox"
-                                className="w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-500"
+                                className="w-4 h-4 border-gray-300 rounded text-green-default focus:ring-green-default"
                             />
                             <label
                                 htmlFor="remember_me"
-                                className="block ml-2 text-sm text-gray-900"
+                                className="block ml-2 text-sm text-yellow-default"
                             >
                                 Remember me
                             </label>
@@ -105,7 +105,7 @@ export default function Login({ code }) {
                         <div className="text-sm">
                             <a
                                 href="#"
-                                className="font-medium text-purple-600 hover:text-purple-500"
+                                className="font-medium underline text-green-default hover:text-green-dark"
                             >
                                 Forgot your password?
                             </a>
@@ -114,12 +114,12 @@ export default function Login({ code }) {
                     <div>
                         <button
                             type="submit"
-                            className="relative flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-purple-600 border border-transparent rounded-md group hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+                            className="relative flex justify-center w-full px-4 py-2 text-sm font-medium rounded-md bg-green-default text-blue-default group hover:bg-green-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
                         >
                             <span className="absolute inset-y-0 left-0 flex items-center pl-3">
                                 {/* Heroicon name: lock-closed */}
                                 <svg
-                                    className="w-5 h-5 text-purple-500 group-hover:text-purple-400"
+                                    className="w-5 h-5 text-blue-default group-hover:text-green-light"
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20"
                                     fill="currentColor"
@@ -136,12 +136,12 @@ export default function Login({ code }) {
                         </button>
                         <a
                             href="/register"
-                            className="relative flex justify-center w-full px-4 py-2 mt-5 text-sm font-medium text-white bg-gray-600 border border-transparent rounded-md group hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+                            className="relative flex justify-center w-full px-4 py-2 mt-5 text-sm font-medium border-2 rounded-md text-yellow-default group hover:text-green-default hover:border-green-default"
                         >
                             <span className="absolute inset-y-0 left-0 flex items-center pl-3">
                                 {/* Heroicon name: lock-closed */}
                                 <svg
-                                    className="w-5 h-5 text-gray-500 group-hover:text-purple-400"
+                                    className="w-5 h-5 text-yellow-default group-hover:text-green-default"
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20"
                                     fill="currentColor"

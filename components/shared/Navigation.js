@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import useSWR from "swr";
 import Link from "next/link";
+import { FaTwitterSquare } from "react-icons/fa";
+import { IconContext } from "react-icons";
 
 export default function Navigation({ siteTitle }) {
     const router = useRouter();
@@ -41,7 +43,7 @@ export default function Navigation({ siteTitle }) {
             <div className="block lg:hidden">
                 <button
                     onClick={() => toggleExpansion(!isExpanded)}
-                    className="flex items-center px-3 py-2 text-white border rounded border-blue-default hover:border-transparent hover:text-black hover:bg-blue-default"
+                    className="flex items-center px-3 py-2 border rounded text-blue-default border-blue-default hover:border-transparent hover:text-green-default hover:bg-blue-default"
                 >
                     <svg
                         className="w-3 h-3 fill-current"
@@ -60,30 +62,60 @@ export default function Navigation({ siteTitle }) {
             >
                 <div className="text-xl lg:flex-grow">
                     <Link href="/dashboard">
-                        <a className="block px-4 py-2 mt-4 mr-5 font-bold leading-none rounded hover:border-2 text-blue-default hover:border-transparent hover:text-yellow-default hover:border-blue-default hover:bg-blue-default lg:mt-0 lg:inline-block">
+                        <a
+                            className={`${
+                                user
+                                    ? `block px-4 py-2 mt-4 mr-5 font-bold leading-none rounded hover:border-2 text-blue-default hover:border-transparent hover:text-green-default hover:border-blue-default hover:bg-blue-default lg:mt-0 lg:inline-block`
+                                    : `hidden`
+                            }`}
+                        >
                             Dashboard
                         </a>
                     </Link>
                     <Link href="/faq">
-                        <a className="block px-4 py-2 mt-4 mr-5 font-bold leading-none rounded hover:border-2 text-blue-default hover:border-transparent hover:text-yellow-default hover:border-blue-default hover:bg-blue-default lg:mt-0 lg:inline-block">
+                        <a className="block px-4 py-2 mt-4 mr-5 font-bold leading-none rounded hover:border-2 text-blue-default hover:border-transparent hover:text-green-default hover:border-blue-default hover:bg-blue-default lg:mt-0 lg:inline-block">
                             FAQ
                         </a>
                     </Link>
                 </div>
                 <div className={`${user ? ` hidden` : ``} text-xl`}>
                     <Link href="/login">
-                        <a className="block px-4 py-2 mt-4 mr-5 leading-none border-2 rounded text-yellow-default border-yellow-default hover:text-blue-default hover:bg-yellow-default hover:border-blue-default lg:mt-0 lg:inline-block">
+                        <a className="block px-4 py-2 mt-4 mr-5 font-bold leading-none border-2 rounded bg-yellow-default text-blue-default border-blue-default hover:text-green-default hover:bg-blue-default hover:border-blue-default lg:mt-0 lg:inline-block">
                             Login
                         </a>
                     </Link>
                 </div>
                 <div className={`${user ? `` : ` hidden`} text-xl`}>
                     <Link href="/login">
-                        <a className="block px-4 py-2 mt-4 mr-5 leading-none border-2 rounded text-yellow-default border-yellow-default hover:text-blue-default hover:bg-yellow-default hover:border-blue-default lg:mt-0 lg:inline-block">
+                        <a className="block px-4 py-2 mt-4 mr-5 font-bold leading-none border-2 rounded text-blue-default border-blue-default hover:text-green-default hover:bg-blue-default hover:border-blue-default lg:mt-0 lg:inline-block">
                             Logout
                         </a>
                     </Link>
                 </div>
+                <div className={`${user ? `hidden` : ``} text-xl`}>
+                    <Link href="/register">
+                        <a className="block px-4 py-2 mt-4 mr-5 font-bold leading-none border-2 rounded text-blue-default border-blue-default hover:text-green-default hover:bg-blue-default hover:border-blue-default lg:mt-0 lg:inline-block">
+                            Sign Up
+                        </a>
+                    </Link>
+                </div>
+                <a
+                    href="https://twitter.com/home"
+                    target="_blank"
+                    className="flex py-2 pl-2"
+                >
+                    <IconContext.Provider
+                        value={{
+                            color: "#05386B",
+                            className: "hover:text-black",
+                            size: "2.9em",
+                        }}
+                    >
+                        <div>
+                            <FaTwitterSquare />
+                        </div>
+                    </IconContext.Provider>
+                </a>
             </div>
         </nav>
     );

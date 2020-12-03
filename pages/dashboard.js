@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import FiatAccountList from "../components/fiat/FiatAccountList";
-import Exchanges from "../components/exchange/Exchanges";
 import Layout from "../components/shared/Layout";
+import DashboardTabs from "@components/dashboard/DashboardTabs";
 
 export default function Dashboard() {
     return (
@@ -14,9 +13,10 @@ export default function Dashboard() {
                     Connect all your accounts below
                 </p>
             </div>
-            {/* <Stats /> */}
-            <FiatAccountList />
-            <Exchanges />
+            <div className="bg-blue-default">
+                {/* <Stats /> */}
+                <DashboardTabs />
+            </div>
         </Layout>
     );
 }
