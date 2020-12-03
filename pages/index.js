@@ -5,11 +5,11 @@ import { getAuthCookie } from "../utils/auth-cookies";
 export default function Home() {
     return (
         <Layout title="Nofomo - Home">
-            <div className="relative overflow-hidden bg-green-light">
+            <div className="relative overflow-hidden">
                 <div className="mx-auto max-w-7xl">
-                    <div className="relative z-10 pb-10 bg-green-light lg:max-w-2xl lg:w-full">
+                    <div className="relative z-10 pb-10 lg:max-w-2xl lg:w-full">
                         <svg
-                            className="absolute inset-y-0 right-0 hidden w-48 h-full transform translate-x-1/2 text-green-light lg:block"
+                            className="absolute inset-y-0 right-0 hidden w-48 h-full transform translate-x-1/2 text-green-default lg:block"
                             fill="currentColor"
                             viewBox="0 0 100 100"
                             preserveAspectRatio="none"
@@ -23,7 +23,7 @@ export default function Home() {
                                     <span className="block xl:inline">
                                         Invest spare change
                                     </span>
-                                    <span className="block text-green-dark xl:inline">
+                                    <span className="block text-yellow-default xl:inline">
                                         {" "}
                                         into digital assets
                                     </span>
@@ -55,22 +55,15 @@ export default function Home() {
                         </main>
                     </div>
                 </div>
-                <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-                    <img
-                        className="object-cover w-full h-56 sm:h-72 md:h-96 lg:w-full lg:h-full"
-                        src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
-                        alt
-                    />
-                </div>
             </div>
 
-            <div className="py-12 bg-yellow-default">
-                <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div className="px-10 pt-10">
+                <div className="px-4 pt-4 pb-8 mx-auto max-w-7xl sm:px-6 lg:px-8 bg-blue-default">
                     <div className="lg:text-center">
-                        <p className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-green-dark sm:text-4xl">
+                        <p className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-green-default sm:text-4xl">
                             A secure way to invest
                         </p>
-                        <p className="max-w-2xl mt-4 text-xl lg:mx-auto">
+                        <p className="max-w-2xl mt-4 text-xl lg:mx-auto text-yellow-default">
                             Nofomo will never sell any of your assets. We only
                             make purchases on your selected exchanges.
                         </p>
@@ -79,7 +72,7 @@ export default function Home() {
                         <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
                             <div className="flex">
                                 <div className="flex-shrink-0">
-                                    <div className="flex items-center justify-center w-12 h-12 rounded-md text-yellow-default bg-blue-default">
+                                    <div className="flex items-center justify-center w-12 h-12 rounded-md text-blue-default bg-green-default">
                                         {/* Heroicon name: globe-alt */}
                                         <svg
                                             className="w-6 h-6"
@@ -99,10 +92,10 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className="ml-4">
-                                    <dt className="text-lg font-medium leading-6 text-green-dark">
+                                    <dt className="text-lg font-medium leading-6 text-green-default">
                                         The best exchanges
                                     </dt>
-                                    <dd className="mt-2 text-base ">
+                                    <dd className="mt-2 text-base text-yellow-default">
                                         We allow you to choose between the most
                                         popular exchanges. Add more here talking
                                         about how good the exchanges are
@@ -111,7 +104,7 @@ export default function Home() {
                             </div>
                             <div className="flex">
                                 <div className="flex-shrink-0">
-                                    <div className="flex items-center justify-center w-12 h-12 rounded-md text-yellow-default bg-blue-default">
+                                    <div className="flex items-center justify-center w-12 h-12 rounded-md text-blue-default bg-green-default">
                                         {/* Heroicon name: scale */}
                                         <svg
                                             className="w-6 h-6"
@@ -131,10 +124,10 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className="ml-4">
-                                    <dt className="text-lg font-medium leading-6 text-green-dark">
+                                    <dt className="text-lg font-medium leading-6 text-green-default">
                                         No hidden fees
                                     </dt>
-                                    <dd className="mt-2 text-base">
+                                    <dd className="mt-2 text-base text-yellow-default">
                                         We will never charge you for any
                                         purchase you make.
                                     </dd>
@@ -142,7 +135,7 @@ export default function Home() {
                             </div>
                             <div className="flex">
                                 <div className="flex-shrink-0">
-                                    <div className="flex items-center justify-center w-12 h-12 rounded-md text-yellow-default bg-blue-default">
+                                    <div className="flex items-center justify-center w-12 h-12 rounded-md text-blue-default bg-green-default">
                                         {/* Heroicon name: lightning-bolt */}
                                         <svg
                                             className="w-6 h-6"
@@ -162,10 +155,10 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className="ml-4">
-                                    <dt className="text-lg font-medium leading-6 text-green-dark">
+                                    <dt className="text-lg font-medium leading-6 text-green-default">
                                         Easy management
                                     </dt>
-                                    <dd className="mt-2 text-base">
+                                    <dd className="mt-2 text-base text-yellow-default">
                                         Easily manage all your investments in
                                         your dashboard. You can control which of
                                         your accounts you want to start saving
@@ -176,7 +169,7 @@ export default function Home() {
                             </div>
                             <div className="flex">
                                 <div className="flex-shrink-0">
-                                    <div className="flex items-center justify-center w-12 h-12 rounded-md text-yellow-default bg-blue-default">
+                                    <div className="flex items-center justify-center w-12 h-12 rounded-md text-blue-default bg-green-default">
                                         {/* Heroicon name: annotation */}
                                         <svg
                                             className="w-6 h-6"
@@ -196,10 +189,10 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className="ml-4">
-                                    <dt className="text-lg font-medium leading-6 text-green-dark">
+                                    <dt className="text-lg font-medium leading-6 text-green-default">
                                         Another topic
                                     </dt>
-                                    <dd className="mt-2 text-base">
+                                    <dd className="mt-2 text-base text-yellow-default">
                                         Lorem ipsum, dolor sit amet consectetur
                                         adipisicing elit. Maiores impedit
                                         perferendis suscipit eaque, iste dolor
@@ -212,7 +205,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="bg-green-light">
+            <div>
                 <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
                     <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
                         <span className="block">Ready to dive in?</span>

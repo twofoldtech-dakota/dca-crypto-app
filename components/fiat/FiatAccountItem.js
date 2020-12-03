@@ -17,16 +17,16 @@ export default function FiatAccountItem() {
 
     return (
         <div>
-            <div className="flex flex-col pt-6 my-2 mt-5 bg-gray-100 rounded-md shadow-lg lg:flex lg:items-center lg:justify-between">
+            <div className="flex flex-col pt-6 my-2 mt-5 rounded-md shadow-lg bg-yellow-default lg:flex lg:items-center lg:justify-between">
                 <div className="flex flex-row w-full px-6 sm:grid-cols-1">
-                    <h2 className="text-2xl font-bold leading-7 text-indigo-600 sm:text-3xl">
+                    <h2 className="text-2xl font-bold leading-7 text-blue-default sm:text-3xl">
                         Interest Checking - 7053
                     </h2>
                     <div className="flex flex-col mt-2 mb-8 sm:flex-row sm:flex-wrap sm:space-x-6">
-                        <div className="flex items-center mt-2 text-sm text-gray-500">
+                        <div className="flex items-center mt-2 text-sm">
                             {/* Heroicon name: briefcase */}
                             <svg
-                                className="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
+                                className="flex-shrink-0 mr-1.5 h-5 w-5"
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
@@ -41,10 +41,10 @@ export default function FiatAccountItem() {
                             </svg>
                             x2
                         </div>
-                        <div className="flex items-center mt-2 text-sm text-gray-500">
+                        <div className="flex items-center mt-2 text-sm">
                             {/* Heroicon name: location-marker */}
                             <svg
-                                className="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
+                                className="flex-shrink-0 mr-1.5 h-5 w-5"
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
@@ -58,10 +58,10 @@ export default function FiatAccountItem() {
                             </svg>
                             Binance
                         </div>
-                        <div className="flex items-center mt-2 text-sm text-gray-500">
+                        <div className="flex items-center mt-2 text-sm">
                             {/* Heroicon name: currency-dollar */}
                             <svg
-                                className="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
+                                className="flex-shrink-0 mr-1.5 h-5 w-5"
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
@@ -76,10 +76,10 @@ export default function FiatAccountItem() {
                             </svg>
                             $120k – $140k
                         </div>
-                        <div className="flex items-center mt-2 text-sm text-gray-500">
+                        <div className="flex items-center mt-2 text-sm">
                             {/* Heroicon name: calendar */}
                             <svg
-                                className="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
+                                className="flex-shrink-0 mr-1.5 h-5 w-5"
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
