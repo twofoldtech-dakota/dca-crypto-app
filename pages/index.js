@@ -64,10 +64,10 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="py-12 bg-green-default">
+            <div className="py-12 bg-yellow-default">
                 <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                     <div className="lg:text-center">
-                        <p className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-yellow-default sm:text-4xl">
+                        <p className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-green-dark sm:text-4xl">
                             A secure way to invest
                         </p>
                         <p className="max-w-2xl mt-4 text-xl lg:mx-auto">
@@ -99,7 +99,7 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className="ml-4">
-                                    <dt className="text-lg font-medium leading-6 text-yellow-default">
+                                    <dt className="text-lg font-medium leading-6 text-green-dark">
                                         The best exchanges
                                     </dt>
                                     <dd className="mt-2 text-base ">
@@ -131,7 +131,7 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className="ml-4">
-                                    <dt className="text-lg font-medium leading-6 text-yellow-default">
+                                    <dt className="text-lg font-medium leading-6 text-green-dark">
                                         No hidden fees
                                     </dt>
                                     <dd className="mt-2 text-base">
@@ -162,7 +162,7 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className="ml-4">
-                                    <dt className="text-lg font-medium leading-6 text-yellow-default">
+                                    <dt className="text-lg font-medium leading-6 text-green-dark">
                                         Easy management
                                     </dt>
                                     <dd className="mt-2 text-base">
@@ -196,7 +196,7 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className="ml-4">
-                                    <dt className="text-lg font-medium leading-6 text-yellow-default">
+                                    <dt className="text-lg font-medium leading-6 text-green-dark">
                                         Another topic
                                     </dt>
                                     <dd className="mt-2 text-base">
