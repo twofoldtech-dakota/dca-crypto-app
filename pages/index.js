@@ -5,7 +5,7 @@ import { getAuthCookie } from "../utils/auth-cookies";
 export default function Home() {
     return (
         <Layout title="Nofomo - Home">
-            <div className="relative overflow-hidden">
+            <div className="relative overflow-hidden bg-green-light">
                 <div className="mx-auto max-w-7xl">
                     <div className="relative z-10 pb-10 bg-green-light lg:max-w-2xl lg:w-full">
                         <svg
