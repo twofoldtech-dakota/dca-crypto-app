@@ -3,7 +3,7 @@ import React from "react";
 
 function Application({ Component, pageProps }) {
     return (
-        <div className="w-full min-h-screen font-mono bg-gray-200">
+        <div className="w-full min-h-screen font-sans text-blue-default">
             <div className="mx-auto">
                 <Component {...pageProps} />
             </div>

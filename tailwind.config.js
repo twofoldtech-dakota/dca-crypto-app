@@ -5,14 +5,18 @@ module.exports = {
         extend: {
             colors: {
                 blue: {
-                    accent: "#00BFB2",
-                    default: "#1A5E63",
+                    default: "#05386B",
                 },
                 yellow: {
-                    default: "#F0F3BD",
+                    default: "#EDF5E1",
                 },
                 green: {
-                    default: "#97D8C4",
+                    dark: "#379683",
+                    default: "#5CDB95",
+                    light: "#8EE4AF",
+                },
+                yellow: {
+                    default: "#EDF5E1",
                 },
             },
         },
